@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Home Page</title>
+</head>
+<body>
+   <div class="wrapper">
+       <header>
+            <nav>
+                
+                
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo" class="tourne"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Presentation</a></li>
+                        <li><a href="#">Chocolate</a></li>
+                        <li><a href="#">CreateYourOwnChocolate</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="description">
+                <p>
+                    Hello, we are a chocolate company based in France in Bretagne, since 2000 we offer our best chocolate creations and we also create what you wish, Our chocolate is made from the best cocoa beans, which we will recover in tropical countries.
+                    I hope that our site will make you want to eat chocolate
+                    Have a nice day</p>
+            </section>
+            <span class="img1"><img src="img/choco1.jpg" alt="hmmm" ></span>
+            <span class="img2"><img src="img/choco2.jpg" alt="hmmm"></span>            
+       </header>
+       <main>
+
+       
+<h1>Different Chocolate</h1>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="img/choco1.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Chocobon</h4>
+    <p class="card-text">Price: $142</p>
+    <a href="#ChocoBon" data-name="ChocoBon" data-price="142" class="add-to-cart btn btn-primary" id="ChocoBon">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="img/chocolate-183543_1920.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">ferrero</h4>
+    <p class="card-text">Price: $25</p>
+    <a href="#Ferrero" data-name="ferrero" data-price="25" class="add-to-cart btn btn-primary" id="Ferrero">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="img/chocolove.jpg" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">chocoenpoudre</h4>
+    <p class="card-text">Price: $36</p>
+    <a href="#Chocoenpoudre" data-name="Chocoenpoudre" data-price="36" class="add-to-cart btn btn-primary" id="Chocoenpoudre">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+</div>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+       </main>
+   </div>
+  
+      
+     
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript">
+  //Scrolling Effect
+
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+            $('nav').addClass('black');
+        } else {
+            $('nav').removeClass('black');
+        }
+    });
+
+   
+    </script>
+    
+</body>
+</html>

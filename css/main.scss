@@ -1,0 +1,114 @@
+@font-face{
+    src: url(../font/NotoSans-Bold.ttf);
+    src: url(../font/NotoSans-Regular.ttf);
+    src: url(../font/NotoSans-BoldItalic.ttf);
+    src: url(../font/NotoSans-Italic.ttf);
+    font-family: Noto;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Noto;
+}
+.jumbotron {
+    background: url(../img/chocolate-183543_1920.jpg) repeat-y;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0!important;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+    h1{
+        margin: 2em;
+        font-size: 4em;
+        
+        
+        
+    }
+    
+   
+}
+
+nav{
+    position: relative;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 40px;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+}
+.line{
+    width: 50px;
+    height: 6px;
+    background: white;
+    margin: 9px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    position: fixed;
+    background: #8c451F;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(90px at 90% -10%);
+    transition: all 1s ease-out;
+}
+.nav-links.open{
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+
+
+}
+    
+    
+
+.nav-links{
+    li{
+        a{
+            color: #F5D562;
+            text-decoration: none;
+            margin: 0;
+            font-size: 2em;
+            transition: 1s;
+        }
+        a:hover{
+            color: white;
+        }
+    }
+}
+.jumbotron{
+   
+        img{
+            overflow:hidden;
+            -webkit-border-radius:50px;
+            -moz-border-radius:50px;
+            border-radius:90px;
+            width:200px;
+            height:200px;
+            box-shadow: 10px 7px 5px black;
+            background-color: white;
+            
+            
+        }
+    
+        
+        
+       
+   
+}

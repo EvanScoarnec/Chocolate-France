@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Home Page</title>
+</head>
+
+<body>
+  <nav>
+
+
+    <div class="menu-icon">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="logo" class="tourne"></a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="landing.html">Presentation</a></li>
+        <li><a href="#choc">Chocolate</a></li>
+        <li><a href="#createchoc">CreateYourOwnChocolate</a></li>
+        <li><a href="#cont">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+
+    <section class="description" >
+      <p>
+        Hello, we are a chocolate company based in France in Bretagne, since 2000 we offer our best chocolate creations
+        and we also create what you wish, Our chocolate is made from the best cocoa beans, which we will recover in
+        tropical countries.
+        I hope that our site will make you want to eat chocolate
+        Have a nice day</p>
+    </section>
+    <span class="img1"><img src="img/choco1.jpg" alt="hmmm"></span>
+    <span class="img2"><img src="img/choco2.jpg" alt="hmmm"></span>
+  </header>
+  <main>
+
+
+    <h1 id="choc">Different Chocolate</h1>
+    <div class="row"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/choco1.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Chocobon</h4>
+              <p class="card-text">Price: $142</p>
+              <a href="#ChocoBon" data-name="ChocoBon" data-price="142" class="add-to-cart btn btn-secondary"
+                id="ChocoBon">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/chocolate-183543_1920.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">ferrero</h4>
+              <p class="card-text">Price: $25</p>
+              <a href="#Ferrero" data-name="ferrero" data-price="25" class="add-to-cart btn btn-secondary"
+                id="Ferrero">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/chocolove.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">chocoenpoudre</h4>
+              <p class="card-text">Price: $36</p>
+              <a href="#Chocoenpoudre" data-name="Chocoenpoudre" data-price="36" class="add-to-cart btn btn-secondary"
+                id="Chocoenpoudre">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 id="createchoc"> CreateYourOwnChocolate</h1>
+    <div class="box">
+      <section class="create">
+        <form>
+          <label for="Chocolate">Type of Chocolate</label>
+          <input type="text" name="CHOCO" placeholder="Black, White..">
+          <label for="number">Number of chocolate</label>
+          <input type="text" name="number" placeholder="1,2,10..">
+          <label for="Event">Events</label>
+          <select id="Event">
+            <option value="birthday"> birthday</option>
+            <option value="funeral"> funeral</option>
+            <option value="Valentine's day"> Valentine's day</option>
+            <option value="Gift">Gift</option>
+            <option value="Parents">For Parents</option>
+            <option value="Animals">Animals(not advise)</option>
+
+          </select>
+          <input id="box1" type="checkbox" />
+          <label for="box1">Normal Box</label>
+          <input id="box2" type="checkbox" />
+          <label for="box2">Luxury Box</label>
+          <input type="submit" value="Submit" href="#createchoc">
+        </form>
+
+
+      </section>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="img/normalBox.jpg" alt="normal box" width="500px" height="400px"></div>
+          <div class="slide"><img src="img/luxuryBox.png" alt="luxury box" width="500px" height="400px"></div>
+          <div class="slide"><img src="img/ChocoSlide.jpg" alt="chocolate" width="500px" height="400px"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <footer>
+    <h1 id="cont">Contact</h1>
+    <img src="img/chocolate-bogoss-yoda.png" alt="yoda">
+    <img src="img/chocolate-bogoss-vador.png" alt="dark">
+  
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript">
+    //Scrolling Effect
+
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+      } else {
+        $('nav').removeClass('black');
+      }
+    });
+    $(document).ready(function () {
+      $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -13,12 +13,10 @@ html, body {
     color: #000!important;
     z-index: 0;
     opacity: .99;
-    
-}
-html{
     scroll-behavior: smooth;
     
 }
+
 ::-webkit-scrollbar{
     width: 20px;
 }
@@ -32,19 +30,62 @@ html{
         #F5D562
 
     );
-    border-radius: 2px;
+    border-radius: 4px;
 }
 header{
 
     width: 100%;
     height: 100vh;
-    background: url(../img/backheader.jpg);
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
     background-size: cover;
     clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
     z-index: 0;
     
    
    
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg,  #F5D562, #dfa579, #c79081,#8c451f);
+    bottom: 40px;
+    right: 50px;
+     text-decoration: none;
+     text-align: center;
+     line-height: 50px;
+     color: black;
+     font-size: 22px;
+     border-radius: 30px;
+     z-index: 999;
+     scroll-behavior: smooth;
+     background-size: 400%;
+}
+.gotopbtn:hover{
+    animation: animate 8s linear infinite;
+}
+.gotopbtn:before{
+    content: '';
+    position: absolute;
+    right: -5px;
+    left: -5px;
+    top: -5px;
+    bottom: -5px;
+    background-size: 400%;
+    background: linear-gradient(90deg,  #F5D562, #abad13, #cc7716,#8c451f);
+    border-radius: 30px;
+    z-index: -1;
+    transition: 0.5s ;
+    opacity: 0;
+    
+}
+.gotopbtn:hover:before{
+    filter: blur(10px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+i{
+    color: white;
 }
 
 .logo{
@@ -97,6 +138,18 @@ nav{
             }
         }
     }
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 1s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width 1s;
 }
 nav.black{
     ul{
@@ -155,6 +208,10 @@ nav.black{
         display: block;
         
     }
+    .cool-link::after{
+        display: none;
+    }
+   
 }
 
 .description{
@@ -186,6 +243,7 @@ nav.black{
         z-index: 0;
         transition: 1s;
         transition-property: transform;
+        cursor: pointer;
 
         
     }
@@ -203,6 +261,8 @@ nav.black{
         z-index: 0;
         transition: 1s;
         transition-property: transform;
+        cursor: pointer;
+        
 
         
     }
@@ -210,7 +270,16 @@ nav.black{
         transform: translatey(220px);
     }
 }
+
+  
+
 @media(max-width: 960px) {
+    footer{
+        img{
+            width: 130px !important;
+            height: 130px!important;
+        }
+    }
     nav{
         ul{
             li{
@@ -221,8 +290,12 @@ nav.black{
         }
     }
     .description{
+        
         p{
+            display: flex;
             font-size: 1.5em;
+           
+            
         }
     }
     .img1{
@@ -317,23 +390,20 @@ nav.black{
         font-size: 10px;
     }
     .create{
-        max-width: 500px;
-        margin-left: 5%!important;
-        margin-left: 5%!important;
-        margin-top: 10%;
-        border-radius: 5px;
-        background: #F5D562;
-        padding: 20px;
         
-        
-        
+        margin: auto !important;
+        margin-top: 10% !important;
     }
     .box{
         display: block!important;
+        
+        
+        
     }
     .slider{
         width: 400px!important;
-       
+        margin: auto !important;
+        margin-top: 10% !important;
        
       
     }
@@ -350,8 +420,6 @@ nav.black{
     }
     .slider{
         width: 350px!important;
-        margin-left: 5%!important;
-        margin-right: 5%!important;
        
         
       
@@ -381,6 +449,12 @@ nav.black{
             transform: translatey(130px);
         }
     }
+    footer{
+        img{
+            width: 90px !important;
+            height: 90px!important;
+        }
+    }
 }
 main{
     z-index: 1;
@@ -405,7 +479,8 @@ main{
     display: flex;
   }
   .card {
-    margin-bottom: 20px;
+    margin : 20px auto;
+
   }
   .card-img-top {
     width: 200px;
@@ -417,7 +492,7 @@ main{
 
 .create{
     max-width: 500px;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 10%;
     border-radius: 5px;
     background: #F5D562;
@@ -430,7 +505,7 @@ main{
 .slider{
     width: 500px;
     overflow: hidden;
-    margin-left: 20%;
+    margin-left: 5%;
     margin-top: 11%;
     margin-right: 5%;
     
@@ -490,6 +565,7 @@ input[type=submit]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 1s;
 
 }
 input[type=submit]:hover{
@@ -516,11 +592,12 @@ input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow sp
 
 .box{
     display: flex;
+    justify-content: center;
 }
 
 footer{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    background: #8c451f;
+    clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 79%, 0 0);
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
     width: 100%;
     height: 100%;
     height: 100vh;
@@ -543,12 +620,84 @@ footer{
         height:180px;
         box-shadow: 10px 7px 5px black;
         background-color: white;
-        margin-top:5%;
-        margin-left: 2%;
+        right: 0px;
        
         
         
         
         
+    }
+    .yoda{
+        margin-right: 20%;
+    }
+    .vador{
+        margin-left: 20%;
+    }
+    p{
+        font-size: 2em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+    }
+    .middle{
+        position: absolute;
+        transform: translateY(-50%);
+        width: 100%;
+       display: flex;
+       justify-content: center;
+        margin-top: 5%;
+
+      }
+      .btn{
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        background: #f1f1f1;
+        margin: 10px;
+        border-radius: 30%;
+        box-shadow: 0 5px 15px -5px #00000070;
+       background: wheat;
+        background-size: 400%;
+        overflow: hidden;
+        position: relative;
+      }
+      .btn i{
+        line-height: 90px;
+        font-size: 26px;
+        transition: 0.2s linear;
+        color: #000;
+       
+      }
+      .btn:hover i{
+        transform: scale(1.3);
+        color: #f1f1f1;
+      }
+      .btn::before{
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: linear-gradient(90deg, #F5D562, #f441a5, #477bc0,#8c451f);
+        background-size: 400%;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+      }
+      .btn:hover::before{
+        
+        top: -10%;
+        left: -10%;
+        animation: animate 8s linear infinite;
+      }
+      
+      @keyframes animate {
+           0%{
+               background-position: 0%;
+           } 
+           100%{
+               background-position: 400%;
+           }
     }
 }

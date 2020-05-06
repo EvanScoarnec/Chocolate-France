@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/landing.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <title>Home Page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <title>Chocolate France</title>
 </head>
 
 <body>
@@ -23,15 +26,16 @@
     </div>
     <div class="menu">
       <ul>
-        <li><a href="landing.html">Presentation</a></li>
-        <li><a href="#choc">Chocolate</a></li>
-        <li><a href="#createchoc">CreateYourOwnChocolate</a></li>
-        <li><a href="#cont">Contact</a></li>
+        <li><a class="cool-link"href="landing.html">Presentation</a></li>
+        <li><a class="cool-link"href="#choc">Chocolate</a></li>
+        <li><a class="cool-link"href="#createchoc">CreateYourOwnChocolate</a></li>
+        <li><a class="cool-link"href="#cont">Contact</a></li>
       </ul>
     </div>
   </nav>
+  <a  class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i></a>
   <header>
-
+    
     <section class="description" >
       <p>
         Hello, we are a chocolate company based in France in Bretagne, since 2000 we offer our best chocolate creations
@@ -41,7 +45,10 @@
         Have a nice day</p>
     </section>
     <span class="img1"><img src="img/choco1.jpg" alt="hmmm"></span>
+    <div class="arrow bounce ">
+      
     <span class="img2"><img src="img/choco2.jpg" alt="hmmm"></span>
+    
   </header>
   <main>
 
@@ -65,9 +72,42 @@
           <div class="card" style="width: 20rem;">
             <img class="card-img-top" src="img/chocolate-183543_1920.jpg" alt="Card image cap">
             <div class="card-block">
-              <h4 class="card-title">ferrero</h4>
+              <h4 class="card-title">black/gold chocolate bar</h4>
+              <p class="card-text">Price: $35</p>
+              <a href="#Ferrero" data-name="ferrero" data-price="35" class="add-to-cart btn btn-secondary"
+                id="Ferrero">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/macaron.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Macaron</h4>
+              <p class="card-text">Price: $3</p>
+              <a href="#Ferrero" data-name="Macaron" data-price="3" class="add-to-cart btn btn-secondary"
+                id="Ferrero">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/buche.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Chocolate log</h4>
               <p class="card-text">Price: $25</p>
-              <a href="#Ferrero" data-name="ferrero" data-price="25" class="add-to-cart btn btn-secondary"
+              <a href="#Ferrero" data-name="Chocolate log" data-price="25" class="add-to-cart btn btn-secondary"
+                id="Ferrero">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/dragées.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Gold sugared almond</h4>
+              <p class="card-text">Price: $14</p>
+              <a href="#Ferrero" data-name="GoldSugaredAlmond" data-price="14" class="add-to-cart btn btn-secondary"
                 id="Ferrero">Add to cart</a>
             </div>
           </div>
@@ -76,9 +116,9 @@
           <div class="card" style="width: 20rem;">
             <img class="card-img-top" src="img/chocolove.jpg" alt="Card image cap">
             <div class="card-block">
-              <h4 class="card-title">chocoenpoudre</h4>
-              <p class="card-text">Price: $36</p>
-              <a href="#Chocoenpoudre" data-name="Chocoenpoudre" data-price="36" class="add-to-cart btn btn-secondary"
+              <h4 class="card-title">Valentine box</h4>
+              <p class="card-text">Price: $28</p>
+              <a href="#Chocoenpoudre" data-name="ValentineBox" data-price="28" class="add-to-cart btn btn-secondary"
                 id="Chocoenpoudre">Add to cart</a>
             </div>
           </div>
@@ -125,9 +165,29 @@
   </main>
   <footer>
     <h1 id="cont">Contact</h1>
-    <img src="img/chocolate-bogoss-yoda.png" alt="yoda">
-    <img src="img/chocolate-bogoss-vador.png" alt="dark">
-  
+    <img class="yoda"src="img/chocolate-bogoss-yoda.png" alt="yoda">
+    <img class="vador"src="img/chocolate-bogoss-vador.png" alt="dark">
+    <p>Here are our two chefs who prepare these wonderful chocolate for you, who make them with care and put a lot of their strength into the manufacture of these products.</p>
+    <p>
+      for more information you can contact us by :</p>
+
+      <div class="middle">
+        <a class="btn" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-google"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
   </footer>
 
 

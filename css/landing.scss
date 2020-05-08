@@ -177,6 +177,14 @@ nav.black{
         margin-top: 10px;
         }
     }
+    footer{
+        .btn {
+            width: 70px!important;
+            height: 70px!important;
+            
+        }
+
+    }
     nav{
         z-index: 999;
         ul{
@@ -339,6 +347,17 @@ nav.black{
         font-size: 2em!important;
     }
 }
+footer{
+    p{
+        font-size: 25px!important;
+    }
+}
+.btn i{
+    line-height: 80px!important;
+    font-size: 24px!important;
+    
+   
+  }
     nav{
         ul{
             li{
@@ -418,6 +437,12 @@ nav.black{
             }
         }
     }
+    .btn i{
+        line-height: 60px!important;
+        font-size: 20px!important;
+        
+       
+      }
     .slider{
         width: 350px!important;
        
@@ -448,6 +473,20 @@ nav.black{
         img:hover{
             transform: translatey(130px);
         }
+    }
+    .btn i{
+        line-height: 50px!important;
+        font-size: 17px!important;
+        
+       
+      }
+    footer{
+        .btn {
+            width: 60px!important;
+            height: 60px!important;
+            
+        }
+
     }
     footer{
         img{
@@ -639,7 +678,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3%;
+        margin: 1em;
     }
     .middle{
         position: absolute;

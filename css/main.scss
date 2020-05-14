@@ -55,7 +55,9 @@ nav{
     height: 6px;
     background: white;
     margin: 9px;
+    
 }
+
 .nav-links{
     display: flex;
     list-style: none;
@@ -77,6 +79,7 @@ nav{
 .nav-links.open{
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(1500px at 90% -10%);
+    
 
 
 }

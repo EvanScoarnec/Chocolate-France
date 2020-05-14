@@ -149,6 +149,22 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+nav ul button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: none;
+  background: none !important;
+}
+
+nav button:hover {
+  color: #000;
+  text-decoration: none;
+}
+
 .cool-link::after {
   content: '';
   display: block;
@@ -287,7 +303,10 @@ nav.black ul {
     height: 130px !important;
   }
   nav ul li a {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  nav button {
+    font-size: 14px !important;
   }
   .description p {
     display: -webkit-box;
@@ -347,6 +366,9 @@ nav.black ul {
   nav ul li a {
     font-size: 10px;
   }
+  nav button {
+    font-size: 10px !important;
+  }
   .img1 img, .img2 img {
     height: 20%;
     top: 55%;
@@ -402,7 +424,10 @@ nav.black ul {
 
 @media (max-width: 580px) {
   nav ul li a {
-    font-size: 18px;
+    font-size: 15px;
+  }
+  nav button {
+    font-size: 15px !important;
   }
   .btn i {
     line-height: 60px !important;

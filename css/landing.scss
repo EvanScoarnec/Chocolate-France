@@ -137,8 +137,24 @@ nav{
                 text-decoration: none;
             }
         }
+        button{
+            display: inline-block;
+           
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            transition: 1s;
+            border: none;
+            background: none!important;
+            }
+        }
+        button:hover{
+            color: #000;
+                text-decoration: none;
+        }
+        
     }
-}
+
 .cool-link::after{
     content: '';
     display: block;
@@ -292,9 +308,12 @@ nav.black{
         ul{
             li{
                 a{
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
+        }
+        button{
+            font-size: 14px!important;
         }
     }
     .description{
@@ -366,6 +385,9 @@ footer{
                 }
             }
         }
+        button{
+            font-size: 10px!important;
+        }
     }
     .img1, .img2{
         img{
@@ -432,9 +454,12 @@ footer{
         ul{
             li{
                 a{
-                    font-size: 18px;
+                    font-size: 15px;
                 }
             }
+        }
+        button{
+            font-size: 15px!important;
         }
     }
     .btn i{

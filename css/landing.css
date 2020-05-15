@@ -496,14 +496,31 @@ main .show-cart li {
 
 main .card {
   margin: 20px auto;
+  height: 400px;
+  border: solid #060c0a 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#949090));
+  background: linear-gradient(180deg, white, #949090);
+  border-radius: 10px;
 }
 
 main .card-img-top {
   width: 200px;
   height: 200px;
+  top: -60px;
+  margin-top: 5px;
+  -webkit-box-shadow: black -15px -15px 25px -15px;
+          box-shadow: black -15px -15px 25px -15px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+main .btn {
+  margin-left: 32%;
+}
+
+main .btn-secondary {
+  background: #282828 !important;
 }
 
 .create {

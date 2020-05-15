@@ -151,18 +151,14 @@ nav ul li a:hover {
 
 nav ul button {
   display: inline-block;
+  background-color: #8c451f;
+  border-radius: 10px;
   text-decoration: none;
   color: #fff;
   font-size: 20px;
   -webkit-transition: 1s;
   transition: 1s;
   border: none;
-  background: none !important;
-}
-
-nav button:hover {
-  color: #000;
-  text-decoration: none;
 }
 
 .cool-link::after {
@@ -800,5 +796,21 @@ footer .btn:hover::before {
   100% {
     background-position: 400%;
   }
+}
+
+h9 {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-style: oblique;
 }
 /*# sourceMappingURL=landing.css.map */

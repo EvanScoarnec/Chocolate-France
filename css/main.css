@@ -75,7 +75,7 @@ nav {
     background: #8c451F;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#8c451F), to(#ca8856));
     background-image: linear-gradient(to top, #8c451F 0%, #ca8856 100%);
-    height: 110vh;
+    height: 140vh;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
